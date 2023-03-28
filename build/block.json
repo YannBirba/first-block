@@ -1,0 +1,78 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "first-block/first-block",
+  "version": "0.1.0",
+  "title": "First block",
+  "category": "widgets",
+  "icon": "heart",
+  "description": "Example block scaffolded with Create Block tool.",
+  "attributes": {
+    "textAlign": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string",
+      "default": "Hello from a dynamic block!"
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": true,
+    "alignWide": true,
+    "anchor": true,
+    "customClassName": true,
+    "multiple": true,
+    "reusable": true,
+    "ariaLabel": true,
+    "className": true,
+    "fontSize": true,
+    "lineHeight": true,
+    "fontStyle": true,
+    "fontWeight": true,
+    "textTransform": true,
+    "textDecoration": true,
+    "letterSpacing": true,
+    "color": {
+      "gradients": true,
+      "link": true,
+      "background": true,
+      "text": true,
+      "enableContrastChecker": true
+    },
+    "defaultStylePicker": true,
+    "dimensions": {
+      "minHeight": true
+    },
+    "inserter": true,
+    "lock": true,
+    "position": {
+      "sticky": true
+    },
+    "spacing": {
+      "padding": true,
+      "margin": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontStyle": true,
+      "__experimentalFontWeight": true,
+      "__experimentalTextTransform": true,
+      "__experimentalTextDecoration": true,
+      "__experimentalLetterSpacing": true
+    },
+    "__experimentalBorder": {
+      "radius": true,
+      "color": true,
+      "style": true,
+      "width": true
+    }
+  },
+  "textdomain": "first-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}
